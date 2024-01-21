@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="style/cdn.jsdelivr.net_npm_swiper@10.0.4_swiper-bundle.min.css"
+    />
+    <title>Nazarii Protskiv Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/3366807418.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page-content">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <section id="header">
+      <div class="container">
+        <nav>
+          <h2>
+            nazarii<span id="surname"></span>
+          </h2>
+          <ul id="sidemenu">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li id="lets-talk" class="special-background"><a href="#contact">Let's Talk</a></li>
+          </ul>
+
+            <!-- <li>
+              <a href="https://github.com/Nazarii14" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <i
+              class="fa-sharp fa-solid fa-circle-xmark"
+              onclick="closemenu()"
+            ></i> -->
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="main-section">
+          <div class="header-text">
+            <p>Junior Python Developer</p>
+            <h1>Hello, I'm <br /><span>Nazarii</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------- about ---------------------- -->
+    <div id="about">
+      <h1 class="section-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+          <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+        ABOUT ME
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+            <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+      </h1>
+      <div class="about-container">
+        <div class="photo">
+          <img
+            src="images/main_photo.jpg"
+          />
+        </div>
+        
+        <div class="about-text">
+          
+          <h1>A brief intro, who am I?</h1>
+
+          <p>I am a diligent student currently started my third year pursuing
+            a degree in <span>Computer Science</span>.
+          </p>
+
+          <p>
+            I have hands-on <b>experience</b> in developing small-scale applications. 
+            Through these projects, I have gained practical insights into web development technologies.
+            I am eager to apply the knowledge and skills I have 
+            acquired during my studies to real-world projects.
+          </p>
+
+          <!-- <p>
+            I also have an affinity for tackling coding challenges on
+            <span>LeetCode</span> and <span>Codewars</span>.
+          </p> -->
+
+          <p>
+            I love Rubik's Cube speedsolving. <br />My official recorded time for the
+            3x3 single solve stands at <span>8.32s</span>, with an average
+            of <span>11.04s</span> over five solves.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="skills">
+      <h1 class="section-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+          <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+        SKILLS
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+            <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+      </h1>
+
+      <div class="skills-container">
+        <div class="skills-row">
+          <div class="skills-header">Frameworks</div>
+          <div class="skills-description">
+            <div>Django</div>
+            <div>Flask</div>
+            <div>FastAPI</div>
+          </div>
+        </div>
+        
+        <div class="skills-row">
+          <div class="skills-header">Science</div>
+          <div class="skills-description">
+            <div>Numpy</div>
+            <div>Pandas</div>
+            <div>MatPlotLib</div>
+            <div>SciPy</div>
+            <div>SymPy</div>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-header">Scraping</div>
+          <div class="skills-description">
+            <div>BS4</div>
+            <div>Selenium</div>
+          </div>
+        </div>
+
+
+        <div class="skills-row">
+          <div class="skills-header">Acceleration</div>
+          <div class="skills-description">
+            <div>CUDA</div>
+            <div>OpenCL</div>
+            <div>asyncio</div>
+            <div>threading</div>
+            <div>multiprocessing</div>
+            <div>numba</div>
+            <div>Cython</div>
+            <div>PyPy</div>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-header">OS</div>
+          <div class="skills-description">
+            <div>Windows</div>
+            <div>linux</div>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-header">Testing</div>
+          <div class="skills-description">
+            <div>unittest</div>
+            <div>PyTest</div>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-header">DBMS</div>
+          <div class="skills-description">
+            <div>PostgreSQL</div>
+            <div>MongoDB</div>
+            <div>MySQL</div>
+          </div>
+        </div>
+
+        <div class="skills-row">
+          <div class="skills-header">Dev Cycle</div>
+          <div class="skills-description">
+            <div>Agile</div>
+            <div>Scrum</div>
+            <div>Waterfall</div>
+            <div>TDD</div>
+          </div>
+        </div>
+
+
+        
+        
+      </div>
+    </div>
+
+    <!-- ---------------------- skills ---------------------- -->
+
+    <!-- <div id="skills">
+      <div class="container-skills">
+        <h1 class="myskills-header">My skills</h1>
+
+        <div class="my-hard-skills-container">
+          <div class="my-skills-blob-wrapper">
+            <div class="my-skills-blob blob-hidden hard-blob">
+              <div class="hard-skills-blob-text">
+                <h2>Hard Skills</h2>
+              </div>
+            </div>
+          </div>
+
+          <ul>
+            <li class="hard-skills-list-hidden">
+              Programming languages such as Python (Django, Flask, NumPy, SciPy,
+              Pandas, MatPlotLib), Java, C++, C# (.NET).
+            </li>
+            <li class="hard-skills-list-hidden">
+              Basics of HTML, CSS, JavaScript and React.js
+            </li>
+            <li class="hard-skills-list-hidden">
+              Strong Discrete math, Probability Theory and statistical analysis,
+              Numerical Methods, Linear Algebra knowledge.
+            </li>
+            <li class="hard-skills-list-hidden">Basics of cryptography.</li>
+            <li class="hard-skills-list-hidden">
+              Knowledge of algorithms and data structures.
+            </li>
+            <li class="hard-skills-list-hidden">
+              Familiar with PostgreSQL and MongoDB database management systems.
+            </li>
+          </ul>
+        </div>
+
+        <div class="my-soft-skills-container">
+          <ul>
+            <li class="soft-skills-list-hidden">
+              Adaptability and willingness to learn new concepts and
+              technologies.
+            </li>
+            <li class="soft-skills-list-hidden">
+              Detail-oriented and committed to delivering high-quality work.
+            </li>
+            <li class="soft-skills-list-hidden">
+              Effective time management and organizational skills.
+            </li>
+            <li class="soft-skills-list-hidden">
+              Ability to work independently and as part of a team.
+            </li>
+            <li class="soft-skills-list-hidden">
+              Strong analytical and critical thinking abilities.
+            </li>
+          </ul>
+
+          <div class="my-skills-blob-wrapper">
+            <div class="my-skills-blob blob-hidden soft-blob">
+              <div class="soft-skills-blob-text">
+                <h2>Soft Skills</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ---------------------- projects ---------------------- -->
+
+    <!-- <div id="projects">
+      <h1 class="projects-title">Projects</h1>
+
+      <div class="slide-container">
+        <div class="slide-content">
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="card-video">
+                <div class="card-sidebar">
+                  <h2 class="project-name">
+                    Sea Battle Game <i class="fa-solid fa-anchor"></i>
+                  </h2>
+                  <p class="description">
+                    Simple OOP game written in Python<br />
+                    <span>Technologies:</span> Flask, HTML, CSS and JavaScript.
+                  </p>
+
+                  <a
+                    class="projects-button"
+                    target="_blank"
+                    href="https://github.com/Nazarii14/Sea-Battle"
+                  >
+                    <i class="fa-brands fa-github"></i>View More
+                  </a>
+                </div>
+                <video autoplay loop muted>
+                  <source src="../videos/seabattlevideo.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-video">
+                <div class="card-sidebar">
+                  <h2 class="project-name">Personal Portfolio Website</h2>
+                  <p class="description">
+                    <span>Technologies:</span> HTML, CSS and JavaScript.
+                  </p>
+
+                  <a
+                    class="projects-button"
+                    target="_blank"
+                    href="https://github.com/Nazarii14/Personal-Portfolio-Website"
+                  >
+                    <i class="fa-brands fa-github"></i>View More
+                  </a>
+                </div>
+                <video autoplay loop muted>
+                  <source src="./videos/website-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-video">
+                <div class="card-sidebar">
+                  <h2 class="project-name">
+                    Path Finding Visualization tool
+                    <i class="fa-solid fa-sitemap"></i>
+                  </h2>
+                  <p class="description">
+                    Visualization Tool<br />
+                    <span>Technologies: </span>PyGame<br />
+                    <span>Algorithm:</span> A*.
+                  </p>
+
+                  <a
+                    class="projects-button"
+                    href="https://github.com/Nazarii14/Path-Finding-Visualization"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>View More
+                  </a>
+                </div>
+                <video autoplay loop muted>
+                  <source
+                    src="../videos/pathfindingvideo.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-video">
+                <div class="card-sidebar">
+                  <h2 class="project-name">Sorting Visualizer</h2>
+                  <p class="description">
+                    Visualization Tool<br />
+                    <span>Technologies:</span> Matplotlib module<br />
+                    <span>Algorithms:</span> bubble sort, gnome sort, insertion
+                    sort, cocktail shaker sort, heap sort, quick sort, selection
+                    sort
+                  </p>
+
+                  <a
+                    class="projects-button"
+                    href="https://github.com/Nazarii14/Path-Finding-Visualization"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>View More
+                  </a>
+                </div>
+                <video autoplay loop muted>
+                  <source
+                    src="../videos/sortingvisualizationvideo.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ---------------------- contact ---------------------- -->
+    <!-- <div id="contact">
+      <div class="container">
+        <div class="contact-row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>rosaka1429@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+380963566929</p>
+            <p><i class="fa-brands fa-telegram"></i>@zbyrachnosochkiv</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/nazarii.protskiv/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/mini_rosaka/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nazarii-protskiv-3876b6277/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://t.me/zbyrachnosochkiv" target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+            <a
+              href="/Nazarii Protskiv CV Resume.pdf"
+              download
+              class="btn btn2 download-btn"
+              ><div class="download-cv-text">Download CV</div></a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div> -->
+      <div class="copyright">
+        <p>2024 © NAZARII PROTSKIV</p>
+        <p>Site designed and coded with ❤️‍🔥</p>
+        <p>BACK TO TOP </p>
+      </div>
+    </div>
+
+    <!-- to top button -->
+    <!-- <a
+      href="#header"
+      class="to-top"
+      data-tilt
+      data-tilt-glare
+      data-tilt-max-glare="0.8"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+      <!-- progress bar on top -->
+      <div class="progress" id="myBar"></div>
+    </div>
+  </body>
+</html>
