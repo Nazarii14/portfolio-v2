@@ -128,6 +128,7 @@ nav ul li.special-background {
     padding: 10px 30px;
     border-radius: 50px;
     margin: 10px 0px;
+    transition: background-color var(--transition-speed) var(--easyness);
 }
   
 nav ul li.special-background a {
@@ -144,6 +145,7 @@ nav ul li.special-background::hover {
 .section-heading {
     font-size: 17vh;
     font-weight: 500;
+    letter-spacing: -3px;
     font-family: 'General Sans';
     text-align: center;
     padding: 20px;
@@ -294,12 +296,13 @@ nav ul li.special-background::hover {
     color: var(--text-color);
     margin-top: 20%;
     font-size: 40px;
+
 }
 
 .header-text h1 {
     font-family: 'General Sans';
     font-size: 14vh;
-    font-weight: 700;
+    font-weight: 800;
 
     margin-top: 20px;
 }
@@ -527,9 +530,11 @@ nav ul li.special-background::hover {
 
 .contact-form-header {
     font-size: 8.5vh;
+    letter-spacing: -3px;
     font-family: 'General Sans';
     font-weight: 600;
 }
+
 .contact-details p, .my-digital-spaces a, .location p {
     color: var(--grey-color);
     font-size: 4.1vh;
@@ -540,6 +545,48 @@ nav ul li.special-background::hover {
 .my-digital-spaces a {
     text-decoration: none;
 } 
+
+.my-digital-spaces ul {
+    padding: 0;
+}
+
+.my-digital-spaces ul li {
+    display: block;
+    list-style: none;
+    margin: 8px 0px 8px;
+    position: relative;
+}
+
+.my-digital-spaces ul li a i {
+    color: #666666;
+    margin-right: 2vh;
+    font-size: 3.5vh;
+}
+
+
+.my-digital-spaces ul li a {
+    font-family: 'Cabinet Grotesk';
+    color: var(--black-color);
+    text-decoration: none;
+    font-size: 3.7vh;
+    position: relative;
+}
+
+.my-digital-spaces ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius: 50px;
+    background-color: var(--underline-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.my-digital-spaces ul li a:hover::after {
+    width: 100%;
+}
 
 .contact-other-header {
     font-family: 'General Sans';
@@ -573,23 +620,37 @@ nav ul li.special-background::hover {
     width: 100%;
 }
 
-form input::placeholder, 
-form textarea::placeholder {
-    font-weight: 100;
-    color: white;
+.name-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-form input, form textarea {
+.name-email input {
+    width: 48%;
+}
+
+form input::placeholder, 
+form textarea::placeholder {
+    color: var(--underline-color);
+    font-family: 'Cabinet Grotesk';
+}
+
+form input, 
+form textarea {
     width: 100%;
-    border: 0;
+    border-bottom: 1px solid var(--underline-color);
+    border-top: none;
+    border-right: none;
+    border-left: none;
     outline: none;
-    background: var(--grey-color);
+    background: var(--beige-color);
     padding: 15px;
     margin: 15px 0;
-    color: white;
+    color: var(--black-color);
     font-size: 18px;
-    border-radius: 6px;
 }
+
 
 textarea {
     resize: none;

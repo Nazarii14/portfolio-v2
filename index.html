@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
     
     <title>Nazarii Protskiv Portfolio</title>
     <script
@@ -15,18 +11,10 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/app.js"></script>
-    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-    ></script>
     <script defer src="js/cursor.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script defer src="js/switchColors.js"></script>
+    <script defer src="js/localTime.js"></script>
 
   </head>
   <body>
@@ -51,7 +39,7 @@
         <div class="main-section">
           <div class="header-text">
             <p>Junior Python Developer</p>
-            <h1>HI THERE, I'M <br/>NAZARII PROTSKIV</h1>
+            <h1>HI THERE, I'M <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NAZARII PROTSKIV</h1>
           </div>
         </div>
       </div>
@@ -388,26 +376,21 @@
         <div class="contact">
           <div class="contact-form">
             <div class="contact-form-header">
-              Have an awesome idea? Let's bring it to life.
+              Have an awesome idea?<br/>Let's bring it to life.
             </div>
-            
-            <form>
-              <div class="contact-form-row">
+
+            <form name="submit-to-google-sheet">
+
+              <div class="name-email">
                 <input type="text" name="Name" placeholder="Your name" required />
-                <input
-                  type="email"
-                  name="Email"
-                  placeholder="Your email"
-                  required
-                />
+                <input type="email" name="Email" placeholder="Your email" required/>
               </div>
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your message"
-              ></textarea>
+
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
               <button type="submit" class="form-btn">Submit</button>
+
             </form>
+
           </div>
 
           <div class="contact-other">
@@ -419,32 +402,38 @@
             
             <div class="my-digital-spaces">
               <h1 class="contact-other-header">My Digital Spaces</h1>
+              <ul>
+                <li>
+                  <a href="https://github.com/Nazarii14" target_="_blank">
+                  <i class="fa-brands fa-github"></i>Github
+                  </a>
+                </li>
 
-              <a href="https://github.com/Nazarii14"
-              target_="_blank"><i class="fa-brands fa-github"></i>
-              Github
-            </a>
-              
-              <a 
-              href="https://www.linkedin.com/in/nazarii-protskiv-3876b6277/"
-              target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-              LinkedIn
-            </a>
+                <li>
+                  <a href="https://www.linkedin.com/in/nazarii-protskiv-3876b6277/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>LinkedIn
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://t.me/zbyrachnosochkiv" target="_blank">
+                    <i class="fa-brands fa-telegram"></i>Telegram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>YouTube
+                  </a>
+                </li>
+
+              </ul>
             
-              <a 
-              href="https://t.me/zbyrachnosochkiv"
-              target="_blank">
-              <i class="fa-brands fa-telegram"></i>
-              Telegram
-            </a>
-            
-            <a>YouTube</a>
             </div>
             
             <div class="location">
               <h1 class="contact-other-header">Location</h1>
-              <p>Lviv, Ukraine</p>
+              <p>Lviv, Ukraine GMT+2</p>
               <p class="local-time">time</p>
             </div>
 
@@ -452,32 +441,11 @@
         </div>
 
 <!--               
-            </div>
-            <a
-              href="/Nazarii Protskiv CV Resume.pdf"
-              download
-              class="btn btn2 download-btn"
-              ><div class="download-cv-text">Download CV</div></a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your message"
-              ></textarea>
-              <button type="submit" class="btn">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
+      <a
+        href="/Nazarii Protskiv CV Resume.pdf"
+        download
+        class="btn btn2 download-btn"
+        ><div class="download-cv-text">Download CV</div></a>
         </div> -->
       </div>
       <div class="copyright">
