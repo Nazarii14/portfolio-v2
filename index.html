@@ -15,12 +15,20 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script defer src="js/switchColors.js"></script>
     <script defer src="js/localTime.js"></script>
-
+    <script defer src="js/toTopButton.js"></script>
+    <script defer src="js/smoothScroll.js"></script>
+    <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" 
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   </head>
   <body>
     <div class="cursor-dot"></div>
     <!-- <div class="cursor-outline"></div> -->
-    
+
+    <!-- <section class='start-animation'> -->
+      
+    <!-- </section> -->
+
     <section id="header">
       <div class="container">
         <nav>
@@ -47,7 +55,7 @@
 
     <!-- ---------------------- about ---------------------- -->
     <div id="about">
-      <h1 class="section-heading">
+      <h1 id="aboutme" class="section-heading">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
           <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
         </svg>
@@ -61,7 +69,7 @@
 
           <div class="about-image">
             <img
-              src="images/main_photo.jpg"
+              src="images/main.webp"
             />
           </div>
 
@@ -124,60 +132,14 @@
                 I also have an affinity for tackling coding challenges on
                 <span>LeetCode</span> and <span>Codewars</span>.
               </p>
-
-              <div class="hobbies-buttons">
-                <a
-                  class="new-btn"
                   href="https://leetcode.com/Rosaka/"
-                  target="_blank"
-                >
                   LeetCode
-                </a>
-                <a
-                  class="new-btn"
                   href="https://www.codewars.com/users/Rosaka"
-                  target="_blank"
-                >
                   Codewars
-                </a>
-              </div>
-            </div>
-          </div> -->
+                 -->
         </div>
       </div>
     </div>
-
-    <!-- ---------------------- education ---------------------- -->
-    <!-- <div id="education">
-      <div class="container">
-        <h1 class="education-header">Education</h1>
-        <div class="education-list">
-          <div class="education-lyceum">
-            <div class="card-lyceum">
-              <h2>
-                <i class="fa-solid fa-chalkboard-user"></i>Lviv Physics and
-                <br />
-                Mathematics Lyceum
-              </h2>
-              <a>2018 - 2021</a>
-            </div>
-          </div>
-
-          <div class="education-university">
-            <div class="card-university">
-              <h2>
-                <i class="fa-solid fa-building-columns"></i> Lviv Ivan Franko
-                National<br />
-                University
-              </h2>
-              <p>Faculty: Applied Mathematics and Informatics</p>
-              <p>Speciality: Computer Science</p>
-              <a>2021 - present</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- ---------------------- skills ---------------------- -->
 
@@ -213,10 +175,11 @@
             </div>
           </div>
 
+
           <div class="skills-row">
             <div class="skills-description">
-              <div class="skill-header">my digital tool box</div>
-              <div class="skill-description">These are my go to tech stack to make any projects happen. 
+              <div class="skill-header">my frontend skills</div>
+              <div class="skill-description">These are my front-end tech stack to make any projects happen. 
                 I am always eager of learning more about my current stack, 
                 and new technologies that could expand my horizons.</div>
             </div>
@@ -224,8 +187,26 @@
               <div class="skill-item">JavaScript</div>
               <div class="skill-item">HTML</div>
               <div class="skill-item">CSS</div>
-              <div class="skill-item">Figma</div>
-              <div class="skill-item">WebFlow</div>
+              <div class="skill-item">REACT</div>
+              <div class="skill-item">FIGMA</div>
+            </div>
+          </div>
+
+
+          <div class="skills-row">
+            <div class="skills-description">
+              <div class="skill-header">other services</div>
+              <div class="skill-description">My other skills I learned during studies at university. 
+                Here are full range of databases from simple joins to OLAP cube models,
+                 multiprocessing, testing, web scraping and other.</div>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">POSTGRES</div>
+              <div class="skill-item">ASYNCIO</div>
+              <div class="skill-item">JAVA</div>
+              <div class="skill-item">C#/C++</div>
+              <div class="skill-item">MONGODB</div>
+              <div class="skill-item">CUDA</div>
             </div>
           </div>
 
@@ -246,118 +227,117 @@
           <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
         </svg>
       </h1>
+      
+      <div class="projects-container">
+        
+        <div class="projects-odd-item">
 
-      <!-- <div class="slide-container">
-        <div class="slide-content">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="card-video">
-                <div class="card-sidebar">
-                  <h2 class="project-name">
-                    Sea Battle Game <i class="fa-solid fa-anchor"></i>
-                  </h2>
-                  <p class="description">
-                    Simple OOP game written in Python<br />
-                    <span>Technologies:</span> Flask, HTML, CSS and JavaScript.
-                  </p>
-
-                  <a
-                    class="projects-button"
-                    target="_blank"
-                    href="https://github.com/Nazarii14/Sea-Battle"
-                  >
-                    <i class="fa-brands fa-github"></i>View More
-                  </a>
-                </div>
-                <video autoplay loop muted>
-                  <source src="../videos/seabattlevideo.mp4" type="video/mp4" />
-                </video>
-              </div>
+          <div class="projects-image">
+            <img src="images/pexels-sohail-nachiti-807598.jpg" alt="rubiksCubeSolver"/>
+            
+            <div class="overlay-image">
+              <video class="screenshot" autoplay loop muted>
+                <source src="/videos/rubikscubeVideo.mp4" type="video/mp4" />
+              </video>
             </div>
 
-            <div class="card">
-              <div class="card-video">
-                <div class="card-sidebar">
-                  <h2 class="project-name">Personal Portfolio Website</h2>
-                  <p class="description">
-                    <span>Technologies:</span> HTML, CSS and JavaScript.
-                  </p>
-
-                  <a
-                    class="projects-button"
-                    target="_blank"
-                    href="https://github.com/Nazarii14/Personal-Portfolio-Website"
-                  >
-                    <i class="fa-brands fa-github"></i>View More
-                  </a>
-                </div>
-                <video autoplay loop muted>
-                  <source src="./videos/website-video.mp4" type="video/mp4" />
-                </video>
-              </div>
+          </div>
+          
+          <div class="projects-info-odd">
+            <div class="project-top">
+              <div class="project-year">2024</div>
+              <div class="stack">Django • JS • HTML • CSS</div>
             </div>
-
-            <div class="card">
-              <div class="card-video">
-                <div class="card-sidebar">
-                  <h2 class="project-name">
-                    Path Finding Visualization tool
-                    <i class="fa-solid fa-sitemap"></i>
-                  </h2>
-                  <p class="description">
-                    Visualization Tool<br />
-                    <span>Technologies: </span>PyGame<br />
-                    <span>Algorithm:</span> A*.
-                  </p>
-
-                  <a
-                    class="projects-button"
-                    href="https://github.com/Nazarii14/Path-Finding-Visualization"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-github"></i>View More
-                  </a>
-                </div>
-                <video autoplay loop muted>
-                  <source
-                    src="../videos/pathfindingvideo.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-video">
-                <div class="card-sidebar">
-                  <h2 class="project-name">Sorting Visualizer</h2>
-                  <p class="description">
-                    Visualization Tool<br />
-                    <span>Technologies:</span> Matplotlib module<br />
-                    <span>Algorithms:</span> bubble sort, gnome sort, insertion
-                    sort, cocktail shaker sort, heap sort, quick sort, selection
-                    sort
-                  </p>
-
-                  <a
-                    class="projects-button"
-                    href="https://github.com/Nazarii14/Path-Finding-Visualization"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-github"></i>View More
-                  </a>
-                </div>
-                <video autoplay loop muted>
-                  <source
-                    src="../videos/sortingvisualizationvideo.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div>
+  
+            <div class="projects-name">Rubik's cube Solver</div>
+            <div class="projects-description">My course work (currently in dev)</div>
           </div>
         </div>
-      </div> -->
+
+        <div class="projects-even-item">
+          <div class="projects-image">
+            <img src="images/pexels-anurag-singh-2264075.jpg" alt="drf_crud"/>
+
+            <div class="overlay-image">
+              <video class="screenshot tilted" autoplay loop muted>
+                <source src="videos/DRF_CRUD.mp4" type="video/mp4" />
+              </video>
+            </div>
+            
+          </div>
+          
+          <div class="projects-info-even"
+ 
+          >
+            <div class="project-top">
+              <div class="project-year">2023</div>
+              <div class="stack">DRF • PYTHON • SWAGGER • JWT</div>
+            </div>
+  
+            <div class="projects-name">Backend to blog using DRF</div>
+            <div class="projects-description">Simple CRUD app</div>
+            <a href="https://github.com/Nazarii14/DRF-CRUD" target="_blank">
+              <button class="new-btn">find more</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-odd-item">
+
+          <div class="projects-image">
+            <img src="images/pexels-kilian-m-1232594.jpg" alt="path finding visualizer"/>
+            
+            <div class="overlay-image">
+              <video class="screenshot" autoplay loop muted>
+                <source src="videos/pathfindingvideo.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+          </div>
+          
+          <div class="projects-info-odd">
+            <div class="project-top">
+              <div class="project-year">2023</div>
+              <div class="stack">PYGAME • PYTHON</div>
+            </div>
+  
+            <div class="projects-name">PATH FINDING VISUALIZER</div>
+            <a href="https://github.com/Nazarii14/Path-Finding-Visualization" target="_blank">
+              <button class="new-btn">find more</button>
+            </a>
+            <!-- <div class="projects-description">Python, Web dev</div> -->
+          </div>
+
+        </div>
+
+        <div class="projects-even-item">
+          <div class="projects-image">
+            <img src="images/pexels-mirsad-mujanovic-691034.jpg" alt="sea battle"/>
+
+            <div class="overlay-image">
+              <video class="screenshot" autoplay loop muted>
+                <source src="videos/pathfindingvideo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            
+          </div>
+          
+          <div class="projects-info-even">
+            <div class="project-top">
+              <div class="project-year">2024</div>
+              <div class="stack">HTML • CSS • JavaScript</div>
+            </div>
+  
+            <div class="projects-name">THIS PORTFOLIO</div>
+            <div class="projects-description">Front End</div>
+
+            <a href="https://nazarii-protskiv-portfolio.netlify.app/" target="_blank">
+              <button class="new-btn">find more</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- ---------------------- contact ---------------------- -->
@@ -379,7 +359,7 @@
               Have an awesome idea?<br/>Let's bring it to life.
             </div>
 
-            <form name="submit-to-google-sheet">
+            <form id="contact-form">
 
               <div class="name-email">
                 <input type="text" name="Name" placeholder="Your name" required />
@@ -388,19 +368,17 @@
 
               <textarea name="Message" rows="6" placeholder="Your message"></textarea>
               <button type="submit" class="form-btn">Submit</button>
-
+              <!-- <a id="msg"></a> -->
             </form>
 
           </div>
 
           <div class="contact-other">
-            
-            <div class="contact-details">
+            <div class="contact-details custom-class">
               <h1 class="contact-other-header">Contact Details</h1>
               <p>protskivnazarii@gmail.com</p>
             </div>
-            
-            <div class="my-digital-spaces">
+            <div class="my-digital-spaces custom-class">
               <h1 class="contact-other-header">My Digital Spaces</h1>
               <ul>
                 <li>
@@ -422,58 +400,48 @@
                 </li>
 
                 <li>
-                  <a href="" target="_blank">
+                  <a href="https://www.youtube.com/watch?v=Q3jORCiOIkU" target="_blank">
                     <i class="fa-brands fa-youtube"></i>YouTube
                   </a>
                 </li>
 
               </ul>
-            
             </div>
             
-            <div class="location">
+            <div class="location custom-class">
               <h1 class="contact-other-header">Location</h1>
               <p>Lviv, Ukraine GMT+2</p>
               <p class="local-time">time</p>
             </div>
-
           </div>
         </div>
-
-<!--               
-      <a
-        href="/Nazarii Protskiv CV Resume.pdf"
-        download
-        class="btn btn2 download-btn"
-        ><div class="download-cv-text">Download CV</div></a>
-        </div> -->
       </div>
+
       <div class="copyright">
         
         <div class="copy">
-          <p>© 2024</p>
-          <p>Nazarii Protskiv</p>
+          <p><span>© 2024</span> Nazarii Protskiv</p>
         </div>
         
         <p class="site-designed">Site designed and coded with ❤️‍🔥</p>
-        
-        <div class="back-to-top"><p>BACK TO TOP</p></div>
+
+        <a href="#header" class="back-to-top">
+          <p>BACK TO TOP<i class="fa-solid fa-arrow-up"></i></p>          
+        </a>
 
       </div>
     </div>
 
-
-    <a
-      href="#header"
-      class="to-top"
-      data-tilt
-      data-tilt-glare
-      data-tilt-max-glare="0.8"
-    >
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-
-    <!-- progress bar on top -->
-    <div class="progress" id="myBar"></div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      const text = new SplitType('.section-heading')
+      gsap.to('.char', {
+        y:0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: .1,
+      })
+    </script>
   </body>
 </html>

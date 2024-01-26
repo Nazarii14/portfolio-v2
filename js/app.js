@@ -1,103 +1,40 @@
-const aboutObserver = new IntersectionObserver((entries) => {
+const sectionHeadingObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-      console.log(entry);
       if (entry.isIntersecting) {
           entry.target.classList.add('show');
       }
   });
 });
 
-const aboutHobbiesTextsObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-          entry.target.classList.add('show-about-hobbies-text');
-      }
-  });
+const sectionHeadings = document.querySelectorAll('.section-heading');
+sectionHeadings.forEach((sectionHeading) => {
+  sectionHeadingObserver.observe(sectionHeading);
 });
 
-const skillsObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-});
+// const aboutHobbiesTextsObserver = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//           entry.target.classList.add('show-about-hobbies-text');
+//       }
+//   });
+// });
 
-const blobObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry);
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show-blob');
-        }
-    });
-});
+// const skillsObserver = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('show');
+//         }
+//     });
+// });
 
+// const aboutHobbiesSvg = document.querySelectorAll("#about-text path");
+// aboutHobbiesSvg.forEach((element) => aboutHobbiesTextsObserver.observe(element));
 
-const aboutCards = document.querySelectorAll('.about-card');
-aboutCards.forEach((element) => aboutObserver.observe(element));
+// const hiddenHardSkillsElements = document.querySelectorAll('.hard-skills-list-hidden');
+// hiddenHardSkillsElements.forEach((element) => skillsObserver.observe(element));
 
-const aboutHobbiesSvg = document.querySelectorAll("#about-text path");
-aboutHobbiesSvg.forEach((element) => aboutHobbiesTextsObserver.observe(element));
-
-const hiddenHardSkillsElements = document.querySelectorAll('.hard-skills-list-hidden');
-hiddenHardSkillsElements.forEach((element) => skillsObserver.observe(element));
-
-const hiddenSoftSkillsElements = document.querySelectorAll('.soft-skills-list-hidden');
-hiddenSoftSkillsElements.forEach((element) => skillsObserver.observe(element));
-
-const hiddenBlobs = document.querySelectorAll('.my-skills-blob');
-hiddenBlobs.forEach((element) => blobObserver.observe(element));
-
-const aboutText = document.querySelectorAll('#about-text path')
-const hobbiesText = document.querySelectorAll('#hobbies-text path')
-
-
-VanillaTilt.init(document.querySelector(".data-tilt"), {
-  scale: 1.05,
-  max: 25,
-  speed: 5000
-});
-
-VanillaTilt.init(document.querySelector(".education-lyceum"), {
-  scale: 1.05,
-  max: 10,
-  speed: 1000
-});
-
-VanillaTilt.init(document.querySelector(".education-university"), {
-  scale: 1.05,
-  max: 10,
-  speed: 1000
-});
-
-VanillaTilt.init(document.querySelector(".btn.btn2"), {
-  scale: 1.15,
-  max: 25,
-  speed: 5000
-});
-
-VanillaTilt.init(document.querySelector(".to-top"), {
-  scale: 1.15,
-  max: 25,
-  speed: 1000
-});
-
-
-
-// to top button
-const toTopButton = document.querySelector(".to-top");
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    toTopButton.classList.add("active")
-  }
-  else {
-    toTopButton.classList.remove("active")
-  }
-})
-
+const aboutText = document.querySelectorAll('#about-text path');
+const hobbiesText = document.querySelectorAll('#hobbies-text path');
 
 
 // side menu
@@ -113,16 +50,17 @@ function closemenu() {
 
 //contact form
 const scriptURL = "https://script.google.com/macros/s/AKfycbyOeuPn9ul10ylJzCEGsm0A8YDYsi_qse82_banpcXOvNBaG7Pu6rhJ09MT4UbyklGN/exec";
-const form = document.forms["submit-to-google-sheet"];
+const form = document.getElementById('contact-form');
 const msg = document.getElementById("msg");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
-      msg.innerHTML = "Message sent successfully!";
+      alert("message!")
+      msg.textContent = "Message sent successfully!";
       setTimeout(function () {
-        msg.innerHTML = "";
+        msg.textContent = "";
       }, 5000);
       form.reset();
     })

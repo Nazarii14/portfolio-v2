@@ -16,6 +16,9 @@ function switchColors(position) {
 
       $('nav ul li a:last').parent().css('background-color', black);
       $('nav ul li a:last').css('color', textColor);
+
+      $('form input').css('background-color', beige);
+      $('form textarea').css('background-color', beige);
     }
     else { // up
       $('body').css('background-color', black);
@@ -30,6 +33,9 @@ function switchColors(position) {
 
       $('nav ul li a:last').parent().css('background-color', textColor);
       $('nav ul li a:last').css('color', black);
+
+      $('form input').css('background-color', black);
+      $('form textarea').css('background-color', black);
     }
 }
 
@@ -38,21 +44,25 @@ $(document).ready(function () {
       var scroll = $(window).scrollTop();
       console.log(scroll);
       
-      if (scroll > 3774) {
+      
+      // if (scroll > 3450) {
+        // switchColors(0);
+      // }
+      // if (scroll > 3800) {
+          // switchColors(1);
+      // }
+      if (scroll > 5350) {
         switchColors(0);
       }
-      if (scroll > 3700) {
+      else if (scroll > 2650) {
           switchColors(1);
-      } else if (scroll > 400) {
+      } 
+      else if (scroll > 360) {
           switchColors(0);
       }
-      else if (scroll > 390) {
+      else if (scroll > 300) {
         switchColors(1);
       }
-      // else if (scroll > 330) {
-      //     switchColors(1);
-      // } else if (scroll > 300) {
-      //     switchColors(0);
-      // }
+
   });
 });
