@@ -13,4 +13,7 @@ const paragraphs = document.querySelectorAll('.about-description p');
 paragraphs.forEach((paragraph) => observer.observe(paragraph));
 
 const skillsDescriptions = document.querySelectorAll('.skills-description');
-skillsDescriptions.forEach((paragraph) => observer.observe(paragraph));
+skillsDescriptions.forEach((skill) => observer.observe(skill));
+
+const contactFormHeader = document.querySelectorAll('.contact-form-header');
+contactFormHeader.forEach((e) => observer.observe(e));

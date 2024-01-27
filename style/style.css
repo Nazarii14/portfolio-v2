@@ -366,7 +366,10 @@ nav ul li.special-background::hover {
     transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
-.show, .about-description p.show, .skills-description.show {
+.show, 
+.about-description p.show, 
+.skills-description.show, 
+.contact-form-header.show {
     transform: translateY(0);
     opacity: 1;
 }
@@ -585,6 +588,9 @@ nav ul li.special-background::hover {
     letter-spacing: -3px;
     font-family: 'General Sans';
     font-weight: 600;
+    transform: translateY(100px);
+    opacity: 0.5;
+    transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
 .contact-details p, .my-digital-spaces a, .location p {
