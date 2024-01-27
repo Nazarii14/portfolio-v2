@@ -19,6 +19,7 @@
     --transition-speed: 1s;
     --skills-item-color: #aeae9d;
     --easyness: cubic-bezier(0.165, 0.84, 0.44, 1);
+    --animation-speed: 0.8s;
 }
 
 html {
@@ -360,12 +361,12 @@ nav ul li.special-background::hover {
     font-family: 'General Sans';
     font-weight: 600;
     color: var(--black-color);
-    transform: translateY(100px);
+    transform: translateY(150px);
     opacity: 0.5;
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
-.show, .about-description p.show {
+.show, .about-description p.show, .skills-description.show {
     transform: translateY(0);
     opacity: 1;
 }
@@ -378,7 +379,7 @@ nav ul li.special-background::hover {
     margin-top: 40px;
     transform: translateY(100px);
     opacity: 0.5;
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
 
@@ -401,6 +402,9 @@ nav ul li.special-background::hover {
     color: var(--grey-color);
     display: flex;
     flex-direction: column;
+    transform: translateY(100px);
+    opacity: 0.5;
+    transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
 .skill-header {

@@ -11,3 +11,6 @@ descriptionHeaders.forEach((header) => observer.observe(header));
 
 const paragraphs = document.querySelectorAll('.about-description p');
 paragraphs.forEach((paragraph) => observer.observe(paragraph));
+
+const skillsDescriptions = document.querySelectorAll('.skills-description');
+skillsDescriptions.forEach((paragraph) => observer.observe(paragraph));
