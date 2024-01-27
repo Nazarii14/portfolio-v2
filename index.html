@@ -18,6 +18,7 @@
     <script defer src="js/toTopButton.js"></script>
     <script defer src="js/smoothScroll.js"></script>
     <script defer src="js/contactForm.js"></script>
+    <script defer src="js/observers.js"></script>
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" 
     integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
@@ -236,7 +237,7 @@
         <div class="projects-odd-item">
 
           <div class="projects-image">
-            <img src="images/pexels-sohail-nachiti-807598.jpg" alt="rubiksCubeSolver"/>
+            <img src="images/pexels-sohail-nachiti-807598.webp" alt="rubiksCubeSolver"/>
             
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
@@ -259,7 +260,7 @@
 
         <div class="projects-even-item">
           <div class="projects-image">
-            <img src="images/pexels-anurag-singh-2264075.jpg" alt="drf_crud"/>
+            <img src="images/pexels-anurag-singh-2264075.webp" alt="drf_crud"/>
 
             <div class="overlay-image">
               <video class="screenshot tilted" autoplay loop muted>
@@ -288,7 +289,7 @@
         <div class="projects-odd-item">
 
           <div class="projects-image">
-            <img src="images/pexels-kilian-m-1232594.jpg" alt="path finding visualizer"/>
+            <img src="images/pexels-kilian-m-1232594.webp" alt="path finding visualizer"/>
             
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
@@ -315,7 +316,7 @@
 
         <div class="projects-even-item">
           <div class="projects-image">
-            <img src="images/pexels-mirsad-mujanovic-691034.jpg" alt="sea battle"/>
+            <img src="images/pexels-mirsad-mujanovic-691034.webp" alt="pathfinding"/>
 
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
@@ -434,15 +435,7 @@
     </div>
 
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      const text = new SplitType('.section-heading')
-      gsap.to('.char', {
-        y:0,
-        stagger: 0.05,
-        delay: 0.2,
-        duration: .1,
-      })
-    </script>
   </body>
 </html>
