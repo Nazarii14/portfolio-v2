@@ -17,9 +17,12 @@
     <script defer src="js/localTime.js"></script>
     <script defer src="js/toTopButton.js"></script>
     <script defer src="js/smoothScroll.js"></script>
+    <script defer src="js/contactForm.js"></script>
     <!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" 
     integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
   </head>
   <body>
     <div class="cursor-dot"></div>
@@ -74,7 +77,7 @@
           </div>
 
           <div class="about-description">
-            <div class="description-header">A brief intro, who am I?</div>
+            <div id="description-header" class="description-header">A brief intro, who am I?</div>
 
             <p>
               I am a Lviv National University student currently at my third year pursuing
@@ -360,7 +363,6 @@
             </div>
 
             <form id="contact-form">
-
               <div class="name-email">
                 <input type="text" name="Name" placeholder="Your name" required />
                 <input type="email" name="Email" placeholder="Your email" required/>
@@ -368,7 +370,6 @@
 
               <textarea name="Message" rows="6" placeholder="Your message"></textarea>
               <button type="submit" class="form-btn">Submit</button>
-              <!-- <a id="msg"></a> -->
             </form>
 
           </div>

@@ -368,6 +368,14 @@ nav ul li.special-background::hover {
     font-family: 'General Sans';
     font-weight: 600;
     color: var(--black-color);
+    transform: translateY(100px);
+    opacity: 0.5;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.show, .about-description p.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .about-description p {
@@ -376,6 +384,9 @@ nav ul li.special-background::hover {
     font-family: 'Cabinet Grotesk';
     line-height: 1.2;
     margin-top: 40px;
+    transform: translateY(100px);
+    opacity: 0.5;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 
@@ -815,14 +826,6 @@ nav .fa-sharp, nav .fa-solid {
     opacity: 1;
 }
 
-#msg {
-    color: var(--underline-color);
-    font-size: 15px;
-    font-weight: 600;
-    display: block;
-    margin-top: 4vh;
-}
-
 
 /* progress bar */
 .progress-container {
@@ -836,23 +839,3 @@ nav .fa-sharp, nav .fa-solid {
     background: #04AA6D;
     width: 0%;
 }
-
-
-/* custom scrollbar */
-/* ::-webkit-scrollbar {
-    width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--grey-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--black-color);
-    border: 2px solid #000000;
-    border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #676767;
-} */
