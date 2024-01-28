@@ -1,8 +1,9 @@
-let scrollBar = window.Scrollbar;
+// left for better days
 
-const options = {
-    'damping': 0.1,
-    'alwaysShowTracks': true,
-}
-
-scrollBar.init(document.querySelectorAll('.container'), options);
+// var Scrollbar = window.Scrollbar;
+// let options = {
+//     "damping": 0.1,
+//     "continuousScrolling": true,
+// }
+// let allElements = document.querySelector('*');
+// Scrollbar.init(allElements, options);
