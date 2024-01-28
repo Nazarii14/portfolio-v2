@@ -17,3 +17,6 @@ skillsDescriptions.forEach((skill) => observer.observe(skill));
 
 const contactFormHeader = document.querySelectorAll('.contact-form-header');
 contactFormHeader.forEach((e) => observer.observe(e));
+
+const headers = document.querySelectorAll('.section-heading');
+headers.forEach((header) => observer.observe(header));

@@ -154,6 +154,8 @@ nav ul li.special-background::hover {
     padding: 20px;
     user-select: none;
     color: var(--underline-color);
+    transform: translateY(150px);
+    transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
 .section-heading svg {
@@ -326,10 +328,6 @@ nav ul li.special-background::hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.section-heading.show {
-    transform: translateY(0);
-}
-
 .about-row {
     height: fit-content;
     display: flex;
@@ -372,6 +370,10 @@ nav ul li.special-background::hover {
 .contact-form-header.show {
     transform: translateY(0);
     opacity: 1;
+}
+
+.section-heading.show {
+    transform: translateY(0);
 }
 
 .about-description p {
@@ -593,37 +595,44 @@ nav ul li.special-background::hover {
     transition: transform var(--animation-speed), opacity var(--animation-speed);
 }
 
-.contact-details p, .my-digital-spaces a, .location p {
+.contact-details p, 
+.my-digital-spaces a, 
+.location p,
+.interesting-stuff ul li a {
     color: var(--grey-color);
     font-size: 4.1vh;
     font-family: 'Cabinet Grotesk';
     margin-top: 1vh;
 }
 
-.my-digital-spaces a {
+.my-digital-spaces a,
+.interesting-stuff a {
     text-decoration: none;
     cursor: none;
 } 
 
-.my-digital-spaces ul {
+.my-digital-spaces ul,
+.interesting-stuff ul {
     padding: 0;
 }
 
-.my-digital-spaces ul li {
+.my-digital-spaces ul li,
+.interesting-stuff ul li {
     display: block;
     list-style: none;
     margin: 8px 0px 8px;
     position: relative;
 }
 
-.my-digital-spaces ul li a i {
+.my-digital-spaces ul li a i,
+.interesting-stuff ul li a i {
     color: #666666;
     margin-right: 2vh;
     font-size: 3.5vh;
 }
 
-
-.my-digital-spaces ul li a {
+.my-digital-spaces ul li a,
+.interesting-stuff ul li a {
     font-family: 'Cabinet Grotesk';
     color: var(--black-color);
     text-decoration: none;
@@ -631,7 +640,8 @@ nav ul li.special-background::hover {
     position: relative;
 }
 
-.my-digital-spaces ul li a::after {
+.my-digital-spaces ul li a::after,
+.interesting-stuff ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -643,19 +653,20 @@ nav ul li.special-background::hover {
     transition: 0.3s;
 }
 
-.my-digital-spaces ul li a:hover::after {
+.my-digital-spaces ul li a:hover::after,
+.interesting-stuff ul li a:hover::after {
     width: 100%;
 }
 
 .custom-class {
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
 }
 
 .contact-other-header {
     font-family: 'General Sans';
     font-size: 5vh;
     font-weight: 600;
-    margin-top: 3.7vh;
+    margin-top: 0vh;
     color: var(--grey-color);
 }
 

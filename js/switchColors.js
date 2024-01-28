@@ -44,17 +44,10 @@ $(document).ready(function () {
       var scroll = $(window).scrollTop();
       console.log(scroll);
       
-      
-      // if (scroll > 3450) {
-        // switchColors(0);
-      // }
-      // if (scroll > 3800) {
-          // switchColors(1);
-      // }
-      if (scroll > 5350) {
+      if (scroll > 5950) {
         switchColors(0);
       }
-      else if (scroll > 2650) {
+      else if (scroll > 2850) {
           switchColors(1);
       } 
       else if (scroll > 360) {
@@ -63,6 +56,5 @@ $(document).ready(function () {
       else if (scroll > 300) {
         switchColors(1);
       }
-
   });
 });
