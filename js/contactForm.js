@@ -5,7 +5,7 @@ const msg = document.getElementById("msg");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
+    .then(() => {
       alert("Message sent successfully!")
       form.reset();
     })

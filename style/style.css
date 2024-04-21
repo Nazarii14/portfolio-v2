@@ -163,8 +163,6 @@ nav ul li.special-background::hover {
     margin-top: -0.2em;
 }
 
-/* new button */
-
 .new-btn {
     background: var(--beige-color);
     box-shadow: 4px 4px var(--text-color), 9px 9px var(--underline-color);
@@ -216,8 +214,6 @@ nav ul li.special-background::hover {
     text-decoration: none;
 }
 
-/* form button */
-
 .form-btn {
     background: var(--beige-color);
     box-shadow: 4px 4px var(--text-color), 9px 9px var(--underline-color);
@@ -261,8 +257,6 @@ nav ul li.special-background::hover {
     color: var(--beige-color);
 }
 
-
-/* main section */
 
 .main-section {
     display: flex;
