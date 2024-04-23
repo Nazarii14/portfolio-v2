@@ -9,7 +9,7 @@ function switchColors(position) {
       $('nav h2').css('color', black);
 
       $('#header').css('background-color', beige);
-      $('.main-section').css('background-color', beige);
+      // $('.main-section').css('background-color', beige);
       $('nav').css('background-color', beige);
 
       $('nav ul li a:lt(3)').css('color', black);
@@ -26,7 +26,7 @@ function switchColors(position) {
       $('nav h2').css('color', textColor);
 
       $('#header').css('background-color', black);
-      $('.main-section').css('background-color', black);
+      // $('.main-section').css('background-color', black);
       $('nav').css('background-color', black);
 
       $('nav ul li a:lt(3)').css('color', textColor);
@@ -42,12 +42,12 @@ function switchColors(position) {
 $(document).ready(function () {
   $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      // console.log(scroll);
+      console.log(scroll);
       
       if (scroll > 5950) {
         switchColors(0);
       }
-      else if (scroll > 2850) {
+      else if (scroll > 3750) {
           switchColors(1);
       } 
       else if (scroll > 360) {

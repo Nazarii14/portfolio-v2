@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta 
+    name="description" 
+    content="This is my portfolio website. Here I show my projects, skills and experience.">
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/cubemodel.css" />
     
     <title>Nazarii Protskiv Portfolio</title>
 
@@ -12,14 +16,18 @@
     <script defer src="js/localTime.js"></script>
     <script defer src="js/contactForm.js"></script>
     <script defer src="js/observers.js"></script>
+    <script defer type="module" src="js/tilt.js"></script>
+    <script defer type="module" src="js/cube.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://kit.fontawesome.com/3366807418.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
   </head>
   <body>
     <div class="cursor-dot"></div>
-    <!-- <div class="cursor-outline"></div> -->
+    <div class="cursor-outline"></div>
 
+    <!-- ---------------------- header ---------------------- -->
     <section id="header">
       <div class="container">
         <nav>
@@ -34,7 +42,265 @@
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        
+
+        <div class="lamp"></div>
+
+        <div class="cube-container">
+          <div class="scene" id="scene">
+              <div
+                      class="pivot centered"
+                      id="pivot"
+                      style="transform: rotateX(-35deg) rotateY(-135deg)"
+              >
+                  <div class="cube" id="cube">
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                      <div class="piece">
+                          <div class="element left"></div>
+                          <div class="element right"></div>
+                          <div class="element top"></div>
+                          <div class="element bottom"></div>
+                          <div class="element back"></div>
+                          <div class="element front"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="guide">
+              <div
+                      class="anchor"
+                      id="anchor3"
+                      style="
+              transform: translateZ(3px) translateY(-33.33%) rotate(-270deg)
+                  translateY(66.67%);
+              "
+              ></div>
+              <div
+                      class="anchor"
+                      id="anchor2"
+                      style="
+              transform: translateZ(3px) translateY(-33.33%) rotate(-180deg)
+                  translateY(66.67%);
+              "
+              ></div>
+              <div
+                      class="anchor"
+                      id="anchor1"
+                      style="
+              transform: translateZ(3px) translateY(-33.33%) rotate(-90deg)
+                  translateY(66.67%);
+              "
+              ></div>
+              <div
+                      class="anchor"
+                      id="anchor0"
+                      style="
+              transform: translateZ(3px) translateY(-33.33%) rotate(0deg)
+                  translateY(66.67%);
+              "
+              ></div>
+          </div>
+      
+        </div>
+
         <div class="main-section">
           <div class="header-text">
             <p>Fullstack Python Developer</p>
@@ -85,7 +351,6 @@
     </div>
 
     <!-- ---------------------- skills ---------------------- -->
-
     <div id="skills">
       <div class="container-skills">
         <h1 class="section-heading">
@@ -158,8 +423,45 @@
       </div>
     </div>
 
-    <!-- ---------------------- projects ---------------------- -->
+    <div id="experience">
+      <h1 class="section-heading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+          <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+        EXPERIENCE
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
+          <path d="M1.39876e-06 -2.79753e-06C6.26248e-07 8.83656 7.16352 16 16 16C24.8366 16 32 8.83656 32 0L1.39876e-06 -2.79753e-06Z" fill="#8C8C73"></path>
+        </svg>
+      </h1>
 
+      <div class="experience-container">
+        <div class="experience-item" data-tilt data-tilt-scale=1.03>
+          <div class="experience-header">
+            <div class="experience-year">March 2024 - present</div>
+            <div class="experience-company">Appexoft&nbsp;&nbsp;|&nbsp;&nbsp;Lviv</div>
+            <div class="experience-job-title">FULLSTACK PYTHON DEVELOPER</div>
+            
+            <ul class="company-list">
+              <li class="company-list-item">
+                <a>
+                  Worked on market data trading project 
+                  that required knowledge of Python threads, 
+                  gRPC, FastAPI, Redis, React and Next.js.
+                </a>
+              </li>
+
+              <li class="company-list-item">
+                <a>
+                  Designed architecture of this project.
+                </a>
+              </li>
+            </ul>
+          
+          </div>
+      </div>
+    </div>
+
+    <!-- ---------------------- projects ---------------------- -->
     <div id="projects">
       <h1 class="section-heading">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16" width="32" height="16">
@@ -174,7 +476,7 @@
       <div class="projects-container">
         <div class="projects-odd-item">
           <div class="projects-image">
-            <img src="images/leaves.webp" alt="rubiksCubeSolver"/>
+            <img class="background-image" src="images/leaves.webp" alt="rubiksCubeSolver"/>
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
                 <source src="videos/rubiksCubeVideo.webm" type="video/mp4" />
@@ -189,13 +491,13 @@
             </div>
   
             <div class="projects-name">Rubik's cube Solver</div>
-            <div class="projects-description">My course work (currently in dev)</div>
+            <div class="projects-description">The biggest project in my life - coursework (in dev)</div>
           </div>
         </div>
 
         <div class="projects-even-item">
           <div class="projects-image">
-            <img src="images/cherryTree.webp" alt="drf_crud"/>
+            <img class="background-image" src="images/cherryTree.webp" alt="drf_crud"/>
 
             <div class="overlay-image">
               <video class="screenshot tilted" autoplay loop muted>
@@ -220,7 +522,7 @@
 
         <div class="projects-odd-item">
           <div class="projects-image">
-            <img src="images/mountain.webp" alt="path finding visualizer"/>
+            <img class="background-image" src="images/mountain.webp" alt="path finding visualizer"/>
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
                 <source src="videos/pathfindingvideo.webm" type="video/mp4" />
@@ -245,7 +547,7 @@
 
         <div class="projects-even-item">
           <div class="projects-image">
-            <img src="images/pic3.webp" alt="pathfinding"/>
+            <img class="background-image" src="images/pic3.webp" alt="pathfinding"/>
             <div class="overlay-image">
               <video class="screenshot" autoplay loop muted>
                 <source src="videos/portfolio.webm" type="video/mp4" />
@@ -393,23 +695,5 @@
       </div>
     </div>
 
-    <!-- <script src="https://unpkg.com/split-type"></script>
-    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>  -->
-    <!-- <script>
-      const lenis = new Lenis();
-
-      lenis.on('scroll', (e) => {
-        console.log(e);
-      })
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-    </script> -->
   </body>
 </html>

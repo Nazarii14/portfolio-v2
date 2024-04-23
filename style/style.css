@@ -52,9 +52,9 @@ body {
 }
 
 .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid var(--text-color);
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--underline-color);
 }
 
 .cursor-dot,
@@ -79,7 +79,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 1.5% 5px 1.5%;
+    padding: 2px 1.5% 5px 1.5%;
     background-color: var(--black-color);
     transition: background-color var(--transition-speed) var(--easyness);
     /* backdrop-filter: blur(10px); */
@@ -144,6 +144,12 @@ nav ul li.special-background::hover {
     color: var(--text-color);
 }
 
+.cube-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
 .section-heading {
     font-size: 17vh;
@@ -263,14 +269,13 @@ nav ul li.special-background::hover {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    background-color: var(--black-color);
+    /* background-color: var(--black-color); */
     transition: background-color var(--transition-speed) var(--easyness);
 }
-
-
 
 .main-image {
     flex-basis: 35%;
@@ -287,16 +292,16 @@ nav ul li.special-background::hover {
 
 .header-text {
     color: var(--text-color);
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 40px;
     letter-spacing: -2px;
+    user-select: none;
 }
 
 .header-text h1 {
     font-family: 'General Sans';
     font-size: 14vh;
     font-weight: 800;
-
     margin-top: 20px;
 }
 
@@ -438,8 +443,94 @@ nav ul li.special-background::hover {
     color: var(--skills-item-color);
 }
 
-/* projects */
+/* experience */
+.experience {
 
+}
+
+.experience-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 8vh 20vh 8vh;
+    color: var(--black-color);
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0 9vh 9vh 9vh;
+    transform: translateY(100px);
+    /* transition: transform var(--animation-speed), opacity var(--animation-speed); */
+}
+
+.experience-year {
+    font-size: 3.5vh;
+    font-family: 'Cabinet Grotesk';
+    line-height: 1.2;
+    margin-top: 3.7vh;
+    color: var(--underline-color);
+    font-weight: 500;
+    width: 100%;
+}
+
+.experience-header {
+    user-select: none;
+    /* border-radius: 16px; */
+    padding-left: 4vh;
+    border-top-left-radius: 4.5vh;
+
+    border-top: 0.5vh solid var(--underline-color);
+    border-left: 0.5vh solid var(--underline-color);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header ul li {
+    list-style: disc;
+    list-style-type:square;
+    margin-left: 10vh;
+}
+
+.experience-company {
+    font-size: 10vh;
+    font-family: 'Cabinet Grotesk';
+    line-height: 1.1;
+    margin-top: 2vh;
+    letter-spacing: 4px;
+    color: var(--black-color);
+    width: 100%;
+}
+
+.experience-job-title {
+    font-size: 4vh;
+    font-family: 'Cabinet Grotesk';
+    line-height: 1.2;
+    margin-top: 3.7vh;
+    letter-spacing: 1vh;
+    width: 100%;
+    color: var(--black-color);
+}
+
+.company-list {
+    width: 75%;
+    margin-top: 2vh;
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+}
+
+.company-list-item {
+    font-size: 4vh;
+    font-family: 'Arial';
+    font-weight: 600;
+    font-family: 'Cabinet Grotesk';
+    color: var(--black-color);
+    user-select: none;
+    margin-bottom: 2vh;
+    list-style-type: disc;
+}
+
+
+/* projects */
 .projects-container {
     width: 100%;
     display: flex;
@@ -491,6 +582,7 @@ nav ul li.special-background::hover {
 .project-top {
     display: flex;
     flex-direction: row;
+    user-select: none;
 }
 
 .project-year, .stack {
@@ -507,6 +599,7 @@ nav ul li.special-background::hover {
 }
 
 .projects-name {
+    margin-top: 3vh;
     font-size: 6vh;
     color: var(--beige-color);
     font-weight: 500;
@@ -537,6 +630,9 @@ nav ul li.special-background::hover {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.background-image {
 }
 
 .projects-image video {

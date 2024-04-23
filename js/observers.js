@@ -4,7 +4,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('show');
         }
     });
-});
+}, {threshold: 0.1});
   
 const descriptionHeaders = document.querySelectorAll('.description-header');
 descriptionHeaders.forEach((header) => observer.observe(header));
